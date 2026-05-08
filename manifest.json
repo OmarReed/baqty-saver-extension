@@ -1,0 +1,63 @@
+{
+  "manifest_version": 3,
+  "name": "وفر باقتك - Baqty Saver",
+  "description": "وفر باقتك: Data saver with always-on background rules, YouTube controls, Facebook Reels guard, and click/hover image loading.",
+  "version": "1.5.0",
+  "minimum_chrome_version": "114",
+  "action": {
+    "default_title": "وفر باقتك",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "permissions": [
+    "storage",
+    "declarativeNetRequest",
+    "declarativeNetRequestFeedback",
+    "tabs",
+    "alarms",
+    "scripting"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "service_worker.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "js": [
+        "content_script.js"
+      ],
+      "css": [
+        "content.css"
+      ],
+      "run_at": "document_start",
+      "all_frames": true
+    }
+  ],
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "baqty_base_blocklist",
+        "enabled": true,
+        "path": "rules/base_rules.json"
+      }
+    ]
+  }
+}

@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>وفر باقتك</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <svg aria-hidden="true" width="0" height="0" style="position:absolute;overflow:hidden">
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3.2 5.4 5.6v5.1c0 4.2 2.7 8 6.6 10.1 3.9-2.1 6.6-5.9 6.6-10.1V5.6L12 3.2Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="m9.2 12 1.9 1.9 4-4.2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M3.5 12h17M12 3c2.2 2.2 3.3 5.2 3.3 9s-1.1 6.8-3.3 9c-2.2-2.2-3.3-5.2-3.3-9S9.8 5.2 12 3Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+    <symbol id="i-youtube" viewBox="0 0 24 24"><rect x="3.2" y="6.2" width="17.6" height="11.6" rx="3.2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m10.4 9.4 4.4 2.6-4.4 2.6V9.4Z" fill="currentColor"/></symbol>
+    <symbol id="i-play-off" viewBox="0 0 24 24"><path d="m4 4 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M8.5 7.4v9.2l7.2-4.2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-film" viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="14" rx="2.4" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M8 5v14M16 5v14M4 9h4M16 9h4M4 15h4M16 15h4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+    <symbol id="i-eye-off" viewBox="0 0 24 24"><path d="m4 4 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M10.6 10.8a2 2 0 0 0 2.6 2.6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M6.6 6.8C4.7 8.1 3.5 10 3 12c1.1 4.1 4.5 7 9 7 1.5 0 2.8-.3 4-.9M9.4 5.4c.8-.3 1.7-.4 2.6-.4 4.5 0 7.9 2.9 9 7-.4 1.4-1.1 2.7-2.1 3.8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-gauge" viewBox="0 0 24 24"><path d="M5 17a8 8 0 1 1 14 0" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M12 17l3.4-5.1" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M7.8 17h8.4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+    <symbol id="i-font" viewBox="0 0 24 24"><path d="M4 18 9.8 6h1.8L17 18M6.5 13.3h8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M17 11h3M18.5 9.5v3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+    <symbol id="i-image" viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="14" rx="2.4" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m7 16 3.2-3.2 2.3 2.2 2.1-2.7L18 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="9" cy="9" r="1" fill="currentColor"/></symbol>
+    <symbol id="i-chart" viewBox="0 0 24 24"><path d="M5 19V5M5 19h15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M8.5 15.5v-3M12.5 15.5v-7M16.5 15.5v-5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+    <symbol id="i-refresh" viewBox="0 0 24 24"><path d="M20 12a8 8 0 1 1-2.4-5.7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M20 5.2v5h-5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-trash" viewBox="0 0 24 24"><path d="M6.5 8h11M10 8V6h4v2M8 8l.7 11h6.6L16 8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  </svg>
+
+  <main class="app-shell" aria-label="وفر باقتك">
+    <section class="top-card">
+      <div class="top-row">
+        <div class="brand-mark">
+          <svg xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Baqty Saver" viewBox="0 0 256 256">
+            <g transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)">
+              <path d="M 49.66 1.125 L 49.66 1.125 c 4.67 -2.393 10.394 -0.859 13.243 3.548 l 0 0 c 1.784 2.761 4.788 4.495 8.071 4.66 l 0 0 c 5.241 0.263 9.431 4.453 9.694 9.694 v 0 c 0.165 3.283 1.899 6.286 4.66 8.071 l 0 0 c 4.407 2.848 5.941 8.572 3.548 13.242 l 0 0 c -1.499 2.926 -1.499 6.394 0 9.319 l 0 0 c 2.393 4.67 0.859 10.394 -3.548 13.242 l 0 0 c -2.761 1.784 -4.495 4.788 -4.66 8.071 v 0 c -0.263 5.241 -4.453 9.431 -9.694 9.694 h 0 c -3.283 0.165 -6.286 1.899 -8.071 4.66 l 0 0 c -2.848 4.407 -8.572 5.941 -13.242 3.548 l 0 0 c -2.926 -1.499 -6.394 -1.499 -9.319 0 l 0 0 c -4.67 2.393 -10.394 0.859 -13.242 -3.548 l 0 0 c -1.784 -2.761 -4.788 -4.495 -8.071 -4.66 h 0 c -5.241 -0.263 -9.431 -4.453 -9.694 -9.694 l 0 0 c -0.165 -3.283 -1.899 -6.286 -4.66 -8.071 l 0 0 C 0.266 60.054 -1.267 54.33 1.125 49.66 l 0 0 c 1.499 -2.926 1.499 -6.394 0 -9.319 l 0 0 c -2.393 -4.67 -0.859 -10.394 3.548 -13.242 l 0 0 c 2.761 -1.784 4.495 -4.788 4.66 -8.071 l 0 0 c 0.263 -5.241 4.453 -9.431 9.694 -9.694 l 0 0 c 3.283 -0.165 6.286 -1.899 8.071 -4.66 l 0 0 c 2.848 -4.407 8.572 -5.941 13.242 -3.548 l 0 0 C 43.266 2.624 46.734 2.624 49.66 1.125 z" style="stroke: none; fill: rgb(0,131,249);"/>
+              <g>
+                <g transform="translate(0, -10)">
+                  <path d="M 27 60 A 18 18 0 0 1 63 60" fill="none" stroke="rgba(255, 255, 255, 0.3)" stroke-width="6" stroke-linecap="round"/>
+                  <path d="M 27 60 A 18 18 0 0 1 32.3 47.3" fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round"/>
+                  <path d="M 45 60 L 32.3 47.3" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+                  <circle cx="45" cy="60" r="4" fill="#ffffff" stroke="none"/>
+                </g>
+              </g>
+            </g>
+          </svg>
+        </div>
+        <div class="brand-copy">
+          <h1>وفر باقتك</h1>
+          <p>حماية عامة على مستوى المتصفح</p>
+        </div>
+        <label class="master-switch" title="تشغيل أو إيقاف الإضافة بالكامل">
+          <input id="enabled" type="checkbox" />
+          <span></span>
+        </label>
+      </div>
+
+      <div class="global-status">
+        <span id="statusPill">الحماية شغالة</span>
+        <span><svg><use href="#i-globe"></use></svg> كل المواقع</span>
+      </div>
+
+      <div class="saving-meter" aria-label="مؤشر التوفير">
+        <div class="meter-head">
+          <span>توفير تقديري</span>
+          <strong id="savedData">0 MB</strong>
+        </div>
+        <div class="meter-track"><span id="meterFill"></span></div>
+      </div>
+    </section>
+
+    <section class="panel compact-panel">
+      <div class="section-head">
+        <h2>مستوى التوفير</h2>
+        <span id="modeTag">متوسط</span>
+      </div>
+      <div class="segmented" role="radiogroup" aria-label="مستوى التوفير">
+        <button class="mode" data-mode="light" type="button">خفيف</button>
+        <button class="mode" data-mode="medium" type="button">متوسط</button>
+        <button class="mode" data-mode="extreme" type="button">أقصى</button>
+      </div>
+      <p id="modeHelp" class="hint"></p>
+    </section>
+
+    <section class="stats-grid" aria-label="إحصائيات التوفير">
+      <article><svg><use href="#i-image"></use></svg><strong id="imagesBlocked">0</strong><span>صور</span></article>
+      <article><svg><use href="#i-play-off"></use></svg><strong id="videosPaused">0</strong><span>فيديو</span></article>
+      <article><svg><use href="#i-chart"></use></svg><strong id="requestsBlocked">0</strong><span>طلبات</span></article>
+    </section>
+
+    <section class="panel">
+      <div class="section-head">
+        <h2>تحكم الفيديو</h2>
+        <span>يوتيوب / فيسبوك</span>
+      </div>
+      <label class="setting primary">
+        <span class="setting-icon"><svg><use href="#i-youtube"></use></svg></span>
+        <span class="setting-copy"><b>تحكم يوتيوب</b><small>إيقاف autoplay والـ previews والـ Shorts داخل كل تبويبات YouTube</small></span>
+        <input id="youtubeControls" type="checkbox" />
+      </label>
+      <label class="setting sub">
+        <span class="setting-icon"><svg><use href="#i-film"></use></svg></span>
+        <span class="setting-copy"><b>إيقاف Shorts تلقائيًا</b><small>تشغيل يدوي فقط عند الضغط</small></span>
+        <input id="youtubePauseShorts" type="checkbox" />
+      </label>
+      <label class="setting sub">
+        <span class="setting-icon"><svg><use href="#i-eye-off"></use></svg></span>
+        <span class="setting-copy"><b>منع preview المصغرات</b><small>يوقف فيديوهات hover والتشغيل الصامت</small></span>
+        <input id="youtubeDisablePreviews" type="checkbox" />
+      </label>
+      <label class="setting sub">
+        <span class="setting-icon"><svg><use href="#i-gauge"></use></svg></span>
+        <span class="setting-copy"><b>وضع جودة اقتصادي</b><small>تقليل preload وإجبار التشغيل اليدوي قدر الإمكان</small></span>
+        <input id="youtubeForceLowData" type="checkbox" />
+      </label>
+      <label class="setting primary">
+        <span class="setting-icon"><svg><use href="#i-play-off"></use></svg></span>
+        <span class="setting-copy"><b>حماية Facebook Reels blob</b><small>تعطيل الريلز الصامتة حتى لو الفيديو muted/blob</small></span>
+        <input id="facebookReelsGuard" type="checkbox" />
+      </label>
+    </section>
+
+    <section class="panel">
+      <div class="section-head">
+        <h2>توفير عام</h2>
+        <span>Global</span>
+      </div>
+      <label class="setting">
+        <span class="setting-icon"><svg><use href="#i-shield"></use></svg></span>
+        <span class="setting-copy"><b>حظر الإعلانات والتراكرز</b><small>قواعد حظر عامة تعمل على كل المواقع</small></span>
+        <input id="blockTrackers" type="checkbox" />
+      </label>
+      <label class="setting">
+        <span class="setting-icon"><svg><use href="#i-font"></use></svg></span>
+        <span class="setting-copy"><b>حظر الخطوط الخارجية</b><small>تقليل تحميل ملفات fonts غير الضرورية</small></span>
+        <input id="blockFonts" type="checkbox" />
+      </label>
+      <label class="setting">
+        <span class="setting-icon"><svg><use href="#i-film"></use></svg></span>
+        <span class="setting-copy"><b>حظر تحميل الميديا قبل الطلب</b><small>على مستوى المتصفح مع استثناء يوتيوب وفيسبوك للتحكم اليدوي</small></span>
+        <input id="blockMedia" type="checkbox" />
+      </label>
+      <label class="setting">
+        <span class="setting-icon"><svg><use href="#i-play-off"></use></svg></span>
+        <span class="setting-copy"><b>إيقاف autoplay داخل الصفحة</b><small>أي فيديو يشتغل لوحده يتوقف في كل التبويبات</small></span>
+        <input id="pauseVideos" type="checkbox" />
+      </label>
+      <label class="setting">
+        <span class="setting-icon"><svg><use href="#i-image"></use></svg></span>
+        <span class="setting-copy"><b>الصور عند التفاعل فقط</b><small>يمنع تحميل الصور ويظهرها عند الضغط عليها</small></span>
+        <input id="blockImages" type="checkbox" />
+      </label>
+      <label class="setting">
+        <span class="setting-icon"><svg><use href="#i-globe"></use></svg></span>
+        <span class="setting-copy"><b>شارة التشغيل</b><small>تنبيه صغير غير مزعج عند عمل الإضافة</small></span>
+        <input id="showBadges" type="checkbox" />
+      </label>
+    </section>
+
+    <footer class="actions">
+      <button id="reloadTab" class="primary-btn" type="button"><svg><use href="#i-refresh"></use></svg> تطبيق على الصفحة الحالية</button>
+      <button id="resetStats" class="ghost-btn" type="button"><svg><use href="#i-trash"></use></svg> تصفير</button>
+    </footer>
+  </main>
+  <script src="popup.js"></script>
+</body>
+</html>
