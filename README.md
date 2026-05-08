@@ -28,6 +28,13 @@ An improved version of **Baqty Saver**, a browser extension designed to reduce i
    ```text
    chrome://extensions
 
+2. Enable Developer mode from the top-left corner of the page.
+3. Click Load unpacked.
+4. Select the extension folder that you extracted or downloaded.
+5. Enjoy using Baqty Saver.
+
+If you find this project useful, please don’t forget to give it a Star to encourage us to keep supporting and improving the project.
+
 ## License
 
 This project is licensed under the **BSD 3-Clause License**.
